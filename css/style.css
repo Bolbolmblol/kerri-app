@@ -1,0 +1,248 @@
+/* "Montserrat" ,sans-serif 
+"Nunito", sans-serif*/
+.root
+{
+    --main_color :rgb(230, 95, 120);
+    
+}
+body
+{
+    font-family: "Nunito", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family:  "Montserrat" ,sans-serif;
+}
+header
+{
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/header-bg.jpg");
+background-size: cover;
+background-position: center center;
+}
+h1{
+    font-size: 50px;
+    
+}
+h1::after
+{
+    content: " ";
+    animation-name: title;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.btn-download
+{
+    border: 2px solid #fff;
+    color: #fff;
+}
+.btn-download:hover
+{
+    background-color: #fff;
+    color: black;
+}
+.setting
+{
+    height: 40px;
+    width: 40px;
+    background-color:rgb(230, 95, 120) ;
+    top: 30%;
+    left: 0;
+    border-radius: 0 10px 10px 0;
+
+}
+.mouse
+{
+    bottom:20px;
+    left: 50%;
+    width: 40px;
+    height: 80px;
+    border: 2px solid #fff;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.mouse::after
+{
+    content: " ";
+    width: 4px;
+    height: 8px;
+    position: absolute;
+    bottom: 10px;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    
+}
+@keyframes move 
+{
+    0%{bottom:20px;}
+    25%{bottom:80px;}
+    50%{bottom:30px;}
+    75%{bottom:80px;}
+    100%{bottom:20px;}
+
+}
+@keyframes title {
+    0%{
+        content: '|';
+    }
+    10%{
+        content: 'De';
+    }
+    15%{
+        content: 'Dev|';
+    }
+    20%{
+        content: 'Deve';
+    }
+    25%{
+        content: 'Devel|';
+    }
+    30%{
+        content: 'Develo';
+    }
+    35%{
+        content: 'Develop';
+    }
+    40%{
+        content: 'Developer|';
+    }
+    50%{
+        content: 'Develop';
+    }
+    55%{
+        content: 'Develo';
+    }
+    60%{
+        content: 'Devel|';
+    }
+    65%{
+        content: 'Deve';
+    }
+    70%{
+        content: 'Dev|';
+    }
+    80%{
+        content: 'De|';
+    }
+    90%,100%{
+        content: '';
+    }
+
+
+
+    
+}
+
+.nav-link:hover
+{
+    color:rgb(230, 95, 120) ;
+}
+.navbar-toggler 
+
+{
+    border-color: transparent;
+}
+.navbar-toggler:focus
+{
+    box-shadow: 0 0 0 transparent;
+}
+.textpink
+{
+    color:rgb(230, 95, 120) ;
+}
+#about .right ul li 
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    transition: all.6s;
+
+}
+#about .right ul li:hover
+{
+    border-color:rgb(230, 95, 120) ;
+}
+#about .right ul li i{
+   transition: all .6s;
+
+}
+#about .right ul li:hover i{
+    color: rgb(230, 95, 120);
+}
+#client
+{
+    background-color: #f1f1ff;
+}
+.carousel-indicators
+{
+    bottom: -40px;
+}
+.carousel-indicators [data-bs-target]
+{
+    height: 6px;
+    background-color:rgb(230, 95, 120) ;
+}
+.nav-link 
+{
+    color: black;
+}
+.nav-pills .nav-link.active
+{
+    background-color: rgb(230, 95, 120);
+}
+.nav-link:hover
+{
+    background-color:rgb(230, 95, 120) ;
+    color: #fff;
+}
+#services .item .itemLayer
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+    top: 100%;
+    left: 0;
+    transition: all .3s;
+}
+#services .item:hover .itemLayer
+{
+top:0;
+}
+#services .item img{
+    transition: all .3s;
+}
+
+#services .item:hover img{
+    transform: scale(1.2);
+}
+#blog
+{
+    background-color: rgb(241, 241, 255);
+}
+.inputtwo
+{
+    width: 48%;
+
+}
+.butn button{
+    background-color: rgb(230, 95, 120);
+    margin-top: 15px;
+}
+.form-control:focus
+{
+    box-shadow: 0 0 0 transparent;
+    border-color: rgb(230, 95, 120);
+}
+html
+{
+scroll-padding-top:85px 
+}
